@@ -1,5 +1,6 @@
 import './App.css';
 
+//Footer of the page - Copyright content
 function Footer(){
     return(
         <footer className="py-5 bg-dark">

@@ -6,6 +6,7 @@ export function NavigationBar({itemsInCart}){
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container px-4 px-lg-5">
                 <Brand />
+                {/**Navigator button appears for  width<992px*/}
                 <NavigatorButton/>
                 <NavigatorContent itemsInCart={itemsInCart} />
             </div>
@@ -37,6 +38,8 @@ export function NavigatorContent({itemsInCart}){
         </div>
     );
 }
+
+//Categories of Shopping products available
 export function Shopping(){
     return(
         <li className="nav-item dropdown">
@@ -51,6 +54,7 @@ export function Shopping(){
     );
 }
 
+//High level view of the shopping cart - Number of Products in Cart
 export function ShoppingCart({itemsInCart}){
     return(
         <div className="d-flex">

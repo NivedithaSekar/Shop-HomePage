@@ -8,9 +8,9 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   const [itemsInCart, setItemsInCart] = useState(0);
-  //const [prodState, setProdState] = useState(false);
   return (
     <div className="App">
+      {/**Using toater to pop-up the notification*/}
       <Toaster/>
       <NavigationBar itemsInCart={itemsInCart} />
       <Content itemsInCart={itemsInCart} setItemsInCart={setItemsInCart}/>

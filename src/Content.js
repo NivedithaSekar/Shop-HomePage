@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
+//Content of the page contains two components - Header & Section
 export function Content({itemsInCart,setItemsInCart}){
     return(
         <div className="Content">
@@ -11,6 +12,7 @@ export function Content({itemsInCart,setItemsInCart}){
     );    
 }
 
+//Herader - Overall view/Intro of the Shop
 function Header(){
     return(
         <header className="bg-dark py-5">
@@ -24,6 +26,7 @@ function Header(){
     );
 }
 
+//Section contains the list of product items
 function Section({itemsInCart, setItemsInCart}){
     return(
         <section className="py-5">
@@ -34,6 +37,7 @@ function Section({itemsInCart, setItemsInCart}){
     );
 }
 
+//Product list is comprised of Products
 export function ProductList({itemsInCart, setItemsInCart}){
     const productList =  require('./product_list.json').productList;
     //console.log(productList);
@@ -50,7 +54,9 @@ export function ProductList({itemsInCart, setItemsInCart}){
     );
 }
 
+//Each Product have - Product details & Specific action button of the product
 export function Product(props){
+    //state of the product based on addition of product to the cart - initially set to false 
     const [prodState, setProdState] = useState(false);
     return(
         <div className="col mb-5">
@@ -117,6 +123,10 @@ function Price(props){
     }
 }
 
+//If the Product is unavailable, We can only view the details. 
+//If it is available, and if Product is not added to cart -> User will view "Add to Cart" & can add the product to the cart
+//Else,User will view "Remove from Cart" & can remove the product to the cart
+//While performing these actions, User can see the pop-ups -> using Toaster
 function ProductAction({availablity,prodState,setProdState,itemsInCart,setItemsInCart}){
         return(
             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
