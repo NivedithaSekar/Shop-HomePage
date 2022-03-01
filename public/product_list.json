@@ -1,0 +1,76 @@
+{
+    "productList" : [
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Special Item",
+            "availablity": true,
+            "rating": 4,
+            "category": "sale",
+            "mrp_price": "$20.00",
+            "offer_price": "$18.00"
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Fancy Item",
+            "availablity": true,
+            "rating": null,
+            "category": "sale",
+            "mrp_price": "$50.00",
+            "offer_price": "$25.00"
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Sale Item",
+            "availablity": true,
+            "rating": 4,
+            "category": "general",
+            "mrp_price": "$40.00",
+            "offer_price": null
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Fancy Product",
+            "availablity": false,
+            "rating": 4,
+            "category": "general",
+            "mrp_price": null,
+            "offer_price": null
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Fancy Item",
+            "availablity": true,
+            "rating": null,
+            "category": "sale",
+            "mrp_price": "$240.00",
+            "offer_price": "$120.00"
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Sale Item",
+            "availablity": true,
+            "rating": 5,
+            "category": "general",
+            "mrp_price": "$60.00",
+            "offer_price": null
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Sale Item",
+            "availablity": true,
+            "rating": 3,
+            "category": "general",
+            "mrp_price": "$15.00",
+            "offer_price": null
+        },
+        {
+            "imageURL" : "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+            "name": "Fancy Item",
+            "availablity": true,
+            "rating": null,
+            "category": "sale",
+            "mrp_price": "$22.00",
+            "offer_price": "$10.00"
+        }
+    ]
+}
